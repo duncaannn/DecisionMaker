@@ -26,30 +26,32 @@ namespace Lab3
                    }
                 }
                 Console.WriteLine(userName + ", please enter an integer between 1 and 100.");
-                int userInput;
-               userInput = Convert.ToInt32(Console.ReadLine());
-                if (userInput > 100)
+                string userInput;
+                userInput=Console.ReadLine();
+                int number;
+               number = int.Parse(userInput);
+                if ((number < 1) && (number > 100));
                 { Console.WriteLine("Number must be between 1 and 100."); }
                 {
 
 
-                    if (userInput % 2 == 0 && userInput > 2 && userInput < 25)
+                    if (number % 2 == 0 && number > 2 && number < 25)
                     {
                         Console.WriteLine("Number is even and less than 25," + userName);
                     }
-                    else if (userInput % 2 != 0 && userInput < 101)
+                    else if (number % 2 != 0 && number < 101)
                     {
                         Console.WriteLine("Number is odd, " + userName);
                     }
-                    else if (userInput % 2 == 0 && userInput > 26 && userInput < 60)
+                    else if (number % 2 == 0 && number> 26 && number < 60)
                     {
                         Console.WriteLine("Number is even, " + userName);
                     }
-                    else if (userInput % 2 == 0 && userInput > 60 && userInput < 101)
+                    else if (number % 2 == 0 && number > 60 && number < 101)
                     {
                         Console.WriteLine("Number is even, " + userName);
                     }
-                    else if (userInput % 2 != 0 && userInput > 60 && userInput < 101)
+                    else if (number % 2 != 0 && number > 60 && number < 101)
                     {
                         Console.WriteLine("Number is odd, " + userName);
                     }
